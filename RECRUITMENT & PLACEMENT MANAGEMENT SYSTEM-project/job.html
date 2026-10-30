@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jobs - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Recruiter</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a class="active" href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+      <div class="side-section">
+        <div class="side-title">Job Actions</div>
+        <div class="btn-row">
+          <a class="btn btn-sm btn-primary" href="job-form.html">Create Job</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Job Openings</h1>
+          <div class="breadcrumb">Home &gt; Jobs</div>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Job Filter</h3>
+        <div class="grid-4">
+          <div class="field">
+            <label>Job Code</label>
+            <input class="input" type="text" placeholder="JOB-2026-001" />
+          </div>
+          <div class="field">
+            <label>Company</label>
+            <select>
+              <option value="">Select</option>
+              <option>Infosys</option>
+              <option>TCS</option>
+              <option>Wipro</option>
+              <option>HCLTech</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Technology</label>
+            <select>
+              <option value="">Select</option>
+              <option>Java</option>
+              <option>Python</option>
+              <option>SQL</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Job Location</label>
+            <input class="input" type="text" placeholder="Pune" />
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:14px;">
+          <div class="field">
+            <label>Job Status</label>
+            <select>
+              <option value="">Select</option>
+              <option>DRAFT</option>
+              <option>OPEN</option>
+              <option>CLOSED</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Employment Type</label>
+            <select>
+              <option value="">Select</option>
+              <option>Full-time</option>
+              <option>Internship</option>
+              <option>Contract</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>—</label>
+            <div class="help">Filter UI demo (no backend)</div>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <button class="btn btn-primary" type="button">Search</button>
+          <button class="btn btn-outline" type="reset">Reset</button>
+          <a class="btn btn-outline" href="job-form.html">Create Job</a>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Jobs Table</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Job Code</th>
+                <th>Company</th>
+                <th>Job Title</th>
+                <th>Openings</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JOB-2026-001</td><td>Infosys</td><td>Associate Java Developer</td><td>15</td><td>Pune</td>
+                <td><span class="badge badge-green">OPEN</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="applications.html">View Applications</a>
+                </td>
+              </tr>
+              <tr>
+                <td>JOB-2026-014</td><td>TCS</td><td>Backend Engineer (Java)</td><td>10</td><td>Mumbai</td>
+                <td><span class="badge badge-green">OPEN</span></td>
+                <td><a class="btn btn-sm btn-outline" href="applications.html">View Applications</a></td>
+              </tr>
+              <tr>
+                <td>JOB-2026-019</td><td>Wipro</td><td>Cloud Support Engineer</td><td>6</td><td>Bengaluru</td>
+                <td><span class="badge badge-yellow">DRAFT</span></td>
+                <td><a class="btn btn-sm btn-outline" href="applications.html">View Applications</a></td>
+              </tr>
+              <tr>
+                <td>JOB-2026-028</td><td>HCLTech</td><td>Java Developer (Microservices)</td><td>8</td><td>Chennai</td>
+                <td><span class="badge badge-green">OPEN</span></td>
+                <td><a class="btn btn-sm btn-outline" href="applications.html">View Applications</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <a class="btn btn-primary" href="job-form.html">Create/Edit Job</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

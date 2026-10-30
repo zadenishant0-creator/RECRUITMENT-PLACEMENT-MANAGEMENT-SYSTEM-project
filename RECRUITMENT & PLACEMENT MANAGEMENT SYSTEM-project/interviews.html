@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interviews - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Placement Officer</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a class="active" href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Interviews</h1>
+          <div class="breadcrumb">Home &gt; Interviews</div>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Interview Scheduling</h3>
+
+        <form onsubmit="return false;">
+          <div class="grid-4">
+            <div class="field">
+              <label>Candidate *</label>
+              <select required>
+                <option>Rahul Patil</option>
+                <option>Meera Singh</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Company *</label>
+              <select required>
+                <option>Infosys</option>
+                <option>TCS</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Job *</label>
+              <select required>
+                <option>JOB-2026-001</option>
+                <option>JOB-2026-014</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Interview Round *</label>
+              <select required>
+                <option>Technical</option>
+                <option>Aptitude</option>
+                <option>HR</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-4" style="margin-top:14px;">
+            <div class="field">
+              <label>Interview Date *</label>
+              <input class="input" type="date" value="2026-11-03" required />
+              <div class="help">Validation demo: Interview date cannot be in the past.</div>
+            </div>
+            <div class="field">
+              <label>Interview Time *</label>
+              <input class="input" type="time" value="11:30" required />
+            </div>
+            <div class="field">
+              <label>Mode *</label>
+              <select required>
+                <option>ONLINE</option>
+                <option>OFFLINE</option>
+                <option>TELEPHONIC</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Interviewer Name</label>
+              <input class="input" type="text" value="Anita (HR)" />
+            </div>
+          </div>
+
+          <div class="btn-row" style="margin-top:14px;">
+            <button class="btn btn-primary" type="button">Schedule</button>
+            <button class="btn btn-outline" type="button">Reschedule</button>
+            <button class="btn btn-outline" type="button">Mark No Show</button>
+            <a class="btn btn-outline" href="placement-process.html">Add Feedback</a>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Interview Table</h3>
+        <div class="btn-row" style="margin-bottom:12px;">
+          <span class="badge badge-blue">Upcoming</span>
+          <span class="badge badge-gray">Completed</span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Interview ID</th>
+                <th>Candidate</th>
+                <th>Company</th>
+                <th>Round</th>
+                <th>Date/Time</th>
+                <th>Mode</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>INT1008</td><td>Rahul Patil</td><td>Infosys</td><td>Technical</td>
+                <td>03-Nov-2026 11:30 AM</td><td><span class="badge badge-blue">ONLINE</span></td>
+                <td><span class="badge badge-green">SCHEDULED</span></td>
+                <td><a class="btn btn-sm btn-primary" href="placement-process.html">Add Feedback</a></td>
+              </tr>
+              <tr>
+                <td>INT1002</td><td>Rahul Patil</td><td>Infosys</td><td>Aptitude</td>
+                <td>25-Oct-2026 09:00 AM</td><td><span class="badge badge-gray">OFFLINE</span></td>
+                <td><span class="badge badge-gray">COMPLETED</span></td>
+                <td><a class="btn btn-sm btn-outline" href="placement-process.html">Add Feedback</a></td>
+              </tr>
+              <tr>
+                <td>INT1010</td><td>Meera Singh</td><td>TCS</td><td>HR</td>
+                <td>04-Nov-2026 02:00 PM</td><td><span class="badge badge-blue">ONLINE</span></td>
+                <td><span class="badge badge-yellow">RESCHEDULED</span></td>
+                <td><a class="btn btn-sm btn-outline" href="placement-process.html">Add Feedback</a></td>
+              </tr>
+              <tr>
+                <td>INT1012</td><td>Arjun Verma</td><td>Wipro</td><td>Managerial</td>
+                <td>05-Nov-2026 10:15 AM</td><td><span class="badge badge-gray">TELEPHONIC</span></td>
+                <td><span class="badge badge-green">SCHEDULED</span></td>
+                <td><a class="btn btn-sm btn-outline" href="placement-process.html">Add Feedback</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="btn-row" style="margin-top:12px;">
+          <button class="btn btn-outline" type="button">Search</button>
+          <button class="btn btn-outline" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

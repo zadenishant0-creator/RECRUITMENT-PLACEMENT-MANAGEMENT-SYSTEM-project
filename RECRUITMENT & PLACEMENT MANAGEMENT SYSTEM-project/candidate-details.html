@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Candidate Details - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Placement Officer</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Candidate Details</h1>
+          <div class="breadcrumb">Candidates &gt; Candidate Details</div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="candidate-form.html">Edit Candidate</a>
+          <a class="btn btn-outline" href="candidates.html">Back to Candidate List</a>
+        </div>
+      </div>
+
+      <section class="panel">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+          <div>
+            <div class="help">Candidate Summary</div>
+            <h2 style="margin:6px 0 6px;">Candidate CAN1001 | Rahul Patil</h2>
+            <div class="help">Primary Technology: <b>Java</b> | Applications: <b>3</b> | Offer: <b>1</b></div>
+          </div>
+          <div>
+            <div class="badge badge-green" style="font-size:14px;">ACTIVE</div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="grid-2">
+          <div>
+            <h3 style="margin:0 0 10px;">Personal Information</h3>
+            <div class="help"><b>Email:</b> rahul.patil@email.com</div>
+            <div class="help"><b>Mobile:</b> 9876543210</div>
+            <div class="help"><b>DOB:</b> 2002-08-12</div>
+            <div class="help"><b>Location:</b> Pune</div>
+            <div class="help"><b>Preferred:</b> Pune</div>
+          </div>
+          <div>
+            <h3 style="margin:0 0 10px;">Academic Details</h3>
+            <div class="help"><b>Qualification:</b> BE</div>
+            <div class="help"><b>College:</b> Sahyadri Institute of Engineering</div>
+            <div class="help"><b>Passing Year:</b> 2025</div>
+            <div class="help"><b>Percentage:</b> 68%</div>
+            <div class="help"><b>Backlog Count:</b> 0</div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 10px;">Skills</h3>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <span class="badge badge-blue">Java (Primary)</span>
+          <span class="badge badge-gray">SQL</span>
+          <span class="badge badge-gray">Spring Boot</span>
+          <span class="badge badge-yellow">Skill Level: Intermediate</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="grid-2">
+          <div>
+            <h3 style="margin:0 0 10px;">Applications History</h3>
+            <div class="table-wrap">
+              <table style="min-width:680px;">
+                <thead>
+                  <tr><th>App ID</th><th>Job</th><th>Status</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>APP1001</td><td>JOB-2026-001</td><td><span class="badge badge-green">SHORTLISTED</span></td>
+                    <td><a class="btn btn-sm btn-outline" href="applications.html">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>APP1016</td><td>JOB-2026-014</td><td><span class="badge badge-yellow">ELIGIBLE</span></td>
+                    <td><a class="btn btn-sm btn-outline" href="applications.html">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin:0 0 10px;">Interview History</h3>
+            <div class="table-wrap">
+              <table style="min-width:680px;">
+                <thead>
+                  <tr><th>Interview ID</th><th>Round</th><th>Date</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>INT1008</td><td>Technical</td><td>03-Nov-2026</td><td><span class="badge badge-blue">SCHEDULED</span></td></tr>
+                  <tr><td>INT1002</td><td>Aptitude</td><td>25-Oct-2026</td><td><span class="badge badge-gray">COMPLETED</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 10px;">Offer / Placement History</h3>
+        <div class="table-wrap">
+          <table style="min-width:860px;">
+            <thead>
+              <tr><th>Offer Status</th><th>Offer Date</th><th>Joining Date</th><th>Joining Status</th><th>Placement</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge badge-green">ACCEPTED</span></td>
+                <td>01-Dec-2026</td>
+                <td>01-Dec-2026</td>
+                <td><span class="badge badge-green">JOINED</span></td>
+                <td><span class="badge badge-green">PLACED</span></td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-yellow">OFFERED</span></td>
+                <td>15-Nov-2026</td>
+                <td>—</td>
+                <td><span class="badge badge-gray">NOT_JOINED</span></td>
+                <td><span class="badge badge-yellow">ON_HOLD</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

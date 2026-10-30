@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reports - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Admin</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a class="active" href="reports.html">Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Reports</h1>
+          <div class="breadcrumb">Home &gt; Reports</div>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Apply Filters</h3>
+        <div class="grid-4">
+          <div class="field">
+            <label>Date From</label>
+            <input class="input" type="date" />
+          </div>
+          <div class="field">
+            <label>Date To</label>
+            <input class="input" type="date" />
+          </div>
+          <div class="field">
+            <label>Technology</label>
+            <select>
+              <option value="">All</option>
+              <option>Java</option>
+              <option>Python</option>
+              <option>SQL</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Company</label>
+            <select>
+              <option value="">All</option>
+              <option>Infosys</option>
+              <option>TCS</option>
+              <option>Wipro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:14px;">
+          <div class="field">
+            <label>Recruiter</label>
+            <select>
+              <option value="">All</option>
+              <option>Ravi</option>
+              <option>Anita</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Passing Year</label>
+            <select>
+              <option value="">All</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>—</label>
+            <div class="help">Report filters are UI-only.</div>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <button class="btn btn-primary" type="button">Apply Filters</button>
+          <button class="btn btn-outline" type="reset">Reset</button>
+          <button class="btn btn-outline" type="button">Print / Export</button>
+        </div>
+      </section>
+
+      <section class="cards" style="margin-top:16px;">
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">1200</div><div class="label">Applications</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">760</div><div class="label">Shortlisted</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">480</div><div class="label">Interviewed</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">210</div><div class="label">Selected</div>
+        </div>
+
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">175</div><div class="label">Joined</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">83.3%</div><div class="label">Offer-to-Join</div>
+        </div>
+        <div class="card" style="grid-column: span 6;">
+          <div class="kpi" style="font-size:16px; font-weight:900;">Recruitment Funnel + Charts (static prototype)</div>
+          <div class="label">Use UI design; connect backend in next phase.</div>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Technology-wise Placement</h3>
+        <div class="table-wrap">
+          <table style="min-width:780px;">
+            <thead>
+              <tr><th>Technology</th><th>Applied</th><th>Selected</th><th>Placed</th><th>Placement %</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Java</td><td>620</td><td>140</td><td>110</td><td><span class="badge badge-green">28.5%</span></td></tr>
+              <tr><td>Python</td><td>330</td><td>60</td><td>48</td><td><span class="badge badge-blue">14.5%</span></td></tr>
+              <tr><td>SQL</td><td>250</td><td>30</td><td>22</td><td><span class="badge badge-yellow">9.8%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Pending Interviews & Open Job Aging</h3>
+        <div class="grid-2">
+          <div class="table-wrap">
+            <table style="min-width:520px;">
+              <thead><tr><th>Candidate</th><th>Job</th><th>Round</th><th>Pending Since</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Meera Singh</td><td>JOB-2026-014</td><td>HR</td><td>2 days</td><td><span class="badge badge-yellow">PENDING</span></td></tr>
+                <tr><td>Arjun Verma</td><td>JOB-2026-001</td><td>Managerial</td><td>4 days</td><td><span class="badge badge-blue">UPCOMING</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-wrap">
+            <table style="min-width:520px;">
+              <thead><tr><th>Job Code</th><th>Company</th><th>Open Since</th><th>Aging</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>JOB-2026-019</td><td>Wipro</td><td>20-Oct-2026</td><td>12 days</td><td><span class="badge badge-yellow">OPEN_AGING</span></td></tr>
+                <tr><td>JOB-2026-028</td><td>HCLTech</td><td>28-Oct-2026</td><td>5 days</td><td><span class="badge badge-blue">ACTIVE</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

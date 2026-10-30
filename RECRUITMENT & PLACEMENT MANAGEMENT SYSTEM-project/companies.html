@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Companies - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Admin</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a class="active" href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Companies</h1>
+          <div class="breadcrumb">Home &gt; Companies</div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="jobs.html">Add Company</a>
+          <a class="btn btn-outline" href="jobs.html">View Jobs</a>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Company Search / Filter</h3>
+        <div class="grid-3">
+          <div class="field">
+            <label>Company Name</label>
+            <input class="input" type="text" placeholder="Infosys" />
+          </div>
+          <div class="field">
+            <label>Industry</label>
+            <input class="input" type="text" placeholder="IT Services" />
+          </div>
+          <div class="field">
+            <label>Location</label>
+            <input class="input" type="text" placeholder="Pune" />
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:14px;">
+          <div class="field">
+            <label>Status</label>
+            <select>
+              <option value="">Select</option>
+              <option>ACTIVE</option>
+              <option>INACTIVE</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Company Type</label>
+            <select>
+              <option value="">Select</option>
+              <option>MNC</option>
+              <option>Startup</option>
+              <option>Mid-size</option>
+              <option>Consultancy</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>HR Email</label>
+            <input class="input" type="text" placeholder="hr@company.com" />
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <button class="btn btn-primary" type="button">Search</button>
+          <button class="btn btn-outline" type="reset">Reset</button>
+          <button class="btn btn-outline" type="button">Save</button>
+          <button class="btn btn-outline" type="button">Update</button>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Company List</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Company Code</th>
+                <th>Company Name</th>
+                <th>Industry</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Open Jobs</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>COM101</td><td>Infosys</td><td>IT Services</td><td>Pune</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>4</td>
+                <td><a class="btn btn-sm btn-outline" href="jobs.html">View Jobs</a></td>
+              </tr>
+              <tr>
+                <td>COM102</td><td>TCS</td><td>IT Services</td><td>Mumbai</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>7</td>
+                <td><a class="btn btn-sm btn-outline" href="jobs.html">View Jobs</a></td>
+              </tr>
+              <tr>
+                <td>COM103</td><td>Wipro</td><td>Technology</td><td>Bengaluru</td>
+                <td><span class="badge badge-yellow">INACTIVE</span></td>
+                <td>2</td>
+                <td><a class="btn btn-sm btn-outline" href="jobs.html">View Jobs</a></td>
+              </tr>
+              <tr>
+                <td>COM104</td><td>HCLTech</td><td>Consultancy</td><td>Chennai</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>5</td>
+                <td><a class="btn btn-sm btn-outline" href="jobs.html">View Jobs</a></td>
+              </tr>
+              <tr>
+                <td>COM105</td><td>TechNova Labs</td><td>Startup</td><td>Hyderabad</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>3</td>
+                <td><a class="btn btn-sm btn-outline" href="jobs.html">View Jobs</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

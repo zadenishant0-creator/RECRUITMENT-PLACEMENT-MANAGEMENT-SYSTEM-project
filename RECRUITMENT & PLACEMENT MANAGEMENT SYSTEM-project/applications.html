@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Applications - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Recruiter</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a class="active" href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Applications</h1>
+          <div class="breadcrumb">Home &gt; Applications</div>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Application Filters</h3>
+        <div class="grid-4">
+          <div class="field">
+            <label>Application ID</label>
+            <input class="input" type="text" placeholder="APP1001" />
+          </div>
+          <div class="field">
+            <label>Candidate</label>
+            <select>
+              <option value="">All</option>
+              <option>Rahul Patil</option>
+              <option>Meera Singh</option>
+              <option>Arjun Verma</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Company</label>
+            <select>
+              <option value="">All</option>
+              <option>Infosys</option>
+              <option>TCS</option>
+              <option>Wipro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Job</label>
+            <select>
+              <option value="">All</option>
+              <option>JOB-2026-001</option>
+              <option>JOB-2026-014</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:14px;">
+          <div class="field">
+            <label>Application Status</label>
+            <select>
+              <option value="">All</option>
+              <option>APPLIED</option>
+              <option>ELIGIBLE</option>
+              <option>SHORTLISTED</option>
+              <option>INTERVIEW_SCHEDULED</option>
+              <option>SELECTED</option>
+              <option>REJECTED</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Date Range</label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <input class="input" type="date" />
+              <input class="input" type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <button class="btn btn-primary" type="button">Search</button>
+          <button class="btn btn-outline" type="reset">Reset</button>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Application Pipeline</h3>
+        <div class="btn-row" style="margin-bottom:12px;">
+          <span class="badge badge-blue">Applied: <b>280</b></span>
+          <span class="badge badge-yellow">Eligible: <b>210</b></span>
+          <span class="badge badge-blue">Shortlisted: <b>760</b></span>
+          <span class="badge badge-green">Selected: <b>210</b></span>
+          <span class="badge badge-gray">Rejected: <b>190</b></span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Application ID</th>
+                <th>Candidate</th>
+                <th>Company</th>
+                <th>Job</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>APP1001</td><td><a href="candidate-details.html">Rahul Patil</a></td><td>Infosys</td><td>JOB-2026-001</td>
+                <td><span class="badge badge-blue">ELIGIBLE</span> <span class="badge badge-yellow">SHORTLISTED</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline" type="button">Check Eligibility</button>
+                  <button class="btn btn-sm btn-primary" type="button">Shortlist</button>
+                </td>
+              </tr>
+              <tr>
+                <td>APP1013</td><td><a href="candidate-details.html">Meera Singh</a></td><td>TCS</td><td>JOB-2026-014</td>
+                <td><span class="badge badge-green">INTERVIEW_SCHEDULED</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline" type="button">Schedule Interview</button>
+                  <button class="btn btn-sm btn-danger" type="button">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>APP1020</td><td><a href="candidate-details.html">Arjun Verma</a></td><td>Infosys</td><td>JOB-2026-001</td>
+                <td><span class="badge badge-gray">REJECTED</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline" type="button">View History</button>
+                </td>
+              </tr>
+              <tr>
+                <td>APP1031</td><td><a href="candidate-details.html">Priya Kulkarni</a></td><td>HCLTech</td><td>JOB-2026-028</td>
+                <td><span class="badge badge-green">SELECTED</span></td>
+                <td>
+                  <button class="btn btn-sm btn-primary" type="button">Schedule Interview</button>
+                  <a class="btn btn-sm btn-outline" href="interviews.html">View Interviews</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="help" style="margin-top:12px;">
+          Navigation demo: Schedule Interview → Interviews page; Candidate name → Candidate Details page.
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

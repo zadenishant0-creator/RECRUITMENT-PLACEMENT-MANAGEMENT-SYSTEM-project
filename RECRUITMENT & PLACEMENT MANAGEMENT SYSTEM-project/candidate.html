@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Candidates - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Recruiter</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+      <div class="side-section">
+        <div class="side-title">Actions</div>
+        <div class="btn-row">
+          <a class="btn btn-sm btn-primary" href="candidate-form.html">Add Candidate</a>
+          <a class="btn btn-sm btn-outline" href="dashboard.html">Back</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Candidate List</h1>
+          <div class="breadcrumb">Home &gt; Candidates</div>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Filter Candidates</h3>
+        <div class="grid-4">
+          <div class="field">
+            <label>Candidate ID</label>
+            <input class="input" type="text" placeholder="CAN1001" />
+          </div>
+          <div class="field">
+            <label>Candidate Name</label>
+            <input class="input" type="text" placeholder="Rahul" />
+          </div>
+          <div class="field">
+            <label>Mobile</label>
+            <input class="input" type="text" placeholder="10-digit mobile" />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input class="input" type="text" placeholder="name@email.com" />
+          </div>
+        </div>
+
+        <div class="grid-4" style="margin-top:14px;">
+          <div class="field">
+            <label>Technology</label>
+            <select>
+              <option value="">Select</option>
+              <option>Java</option>
+              <option>Python</option>
+              <option>SQL</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Passing Year</label>
+            <select>
+              <option value="">Select</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Qualification</label>
+            <select>
+              <option value="">Select</option>
+              <option>BE</option>
+              <option>BTech</option>
+              <option>MCA</option>
+              <option>BSc</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Placement Status</label>
+            <select>
+              <option value="">Select</option>
+              <option>ACTIVE</option>
+              <option>PLACED</option>
+              <option>ON_HOLD</option>
+              <option>INACTIVE</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <button class="btn btn-primary" type="button">Search</button>
+          <button class="btn btn-outline" type="reset">Reset</button>
+          <a class="btn btn-outline" href="candidate-form.html">Add Candidate</a>
+        </div>
+
+        <div class="error" style="display:none;">
+          Please enter candidate name.
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px;">
+        <h3 style="margin:0 0 12px;">Candidate Results</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Candidate ID</th>
+                <th>Candidate Name</th>
+                <th>Technology</th>
+                <th>Qualification</th>
+                <th>Passing Year</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CAN1001</td><td>Rahul Patil</td><td>Java</td><td>BE</td><td>2025</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1002</td><td>Meera Singh</td><td>Python</td><td>MCA</td><td>2026</td>
+                <td><span class="badge badge-blue">ON_HOLD</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1003</td><td>Arjun Verma</td><td>Java</td><td>BTech</td><td>2025</td>
+                <td><span class="badge badge-yellow">INACTIVE</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1004</td><td>Neha Rao</td><td>SQL</td><td>BE</td><td>2024</td>
+                <td><span class="badge badge-green">PLACED</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1005</td><td>Priya Kulkarni</td><td>Java</td><td>MCA</td><td>2026</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1006</td><td>Rohit Sharma</td><td>Python</td><td>BTech</td><td>2025</td>
+                <td><span class="badge badge-green">ACTIVE</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1007</td><td>Ayesha Khan</td><td>SQL</td><td>BE</td><td>2026</td>
+                <td><span class="badge badge-blue">ON_HOLD</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CAN1008</td><td>Vikram Iyer</td><td>Java</td><td>BSc</td><td>2024</td>
+                <td><span class="badge badge-yellow">INACTIVE</span></td>
+                <td>
+                  <a class="btn btn-sm btn-outline" href="candidate-details.html">View</a>
+                  <a class="btn btn-sm btn-primary" href="candidate-form.html">Edit</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <button class="btn btn-outline btn-sm" type="button">Previous</button>
+          <button class="btn btn-primary btn-sm" type="button">1</button>
+          <button class="btn btn-outline btn-sm" type="button">2</button>
+          <button class="btn btn-outline btn-sm" type="button">Next</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

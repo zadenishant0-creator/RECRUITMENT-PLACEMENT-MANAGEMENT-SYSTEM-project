@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create/Edit Job - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Admin</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a class="active" href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Create/Edit Job</h1>
+          <div class="breadcrumb">Jobs &gt; Create/Edit Job</div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-outline" href="jobs.html">Cancel/Back</a>
+        </div>
+      </div>
+
+      <section class="panel">
+        <h3 style="margin:0 0 12px;">Job Requirement Form</h3>
+
+        <form onsubmit="return false;">
+          <div class="grid-3">
+            <div class="field">
+              <label>Company *</label>
+              <select required>
+                <option>Infosys</option>
+                <option>TCS</option>
+                <option>Wipro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Job Code *</label>
+              <input class="input" type="text" value="JOB-2026-001" required />
+            </div>
+            <div class="field">
+              <label>Job Title *</label>
+              <input class="input" type="text" value="Associate Java Developer" required />
+            </div>
+          </div>
+
+          <div class="grid-3" style="margin-top:14px;">
+            <div class="field">
+              <label>Number of Openings *</label>
+              <input class="input" type="number" value="15" required />
+              <div class="help">Validation demo: Number of openings must be greater than zero.</div>
+            </div>
+            <div class="field">
+              <label>Employment Type *</label>
+              <select required>
+                <option>Full-time</option>
+                <option>Internship</option>
+                <option>Contract</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Location *</label>
+              <input class="input" type="text" value="Pune" required />
+            </div>
+          </div>
+
+          <div class="grid-3" style="margin-top:14px;">
+            <div class="field">
+              <label>Minimum Package (Optional)</label>
+              <input class="input" type="number" value="4.5" />
+            </div>
+            <div class="field">
+              <label>Maximum Package (Optional)</label>
+              <input class="input" type="number" value="6.0" />
+            </div>
+            <div class="field">
+              <label>Status *</label>
+              <select required>
+                <option>OPEN</option>
+                <option>DRAFT</option>
+                <option>CLOSED</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 12px;">Eligibility Criteria</h3>
+
+          <div class="grid-3">
+            <div class="field">
+              <label>Qualification(s) *</label>
+              <select multiple size="3">
+                <option selected>BE</option>
+                <option>BTech</option>
+                <option>MCA</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Minimum Percentage *</label>
+              <input class="input" type="number" value="60" required />
+              <div class="help">Cutoff example.</div>
+            </div>
+            <div class="field">
+              <label>Maximum Backlogs *</label>
+              <input class="input" type="number" value="0" required />
+            </div>
+          </div>
+
+          <div class="grid-3" style="margin-top:14px;">
+            <div class="field">
+              <label>Minimum Passing Year</label>
+              <input class="input" type="number" value="2024" />
+            </div>
+            <div class="field">
+              <label>Maximum Passing Year</label>
+              <input class="input" type="number" value="2026" />
+            </div>
+            <div class="field">
+              <label>Experience Required</label>
+              <input class="input" type="text" placeholder="Optional" />
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 12px;">Skills</h3>
+
+          <div class="grid-3">
+            <div class="field">
+              <label>Required Technology *</label>
+              <select required>
+                <option>Java</option>
+                <option>Python</option>
+                <option>SQL</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Required Skills *</label>
+              <input class="input" type="text" value="SQL, Spring Boot" required />
+            </div>
+            <div class="field">
+              <label>—</label>
+              <div class="help">Skills multi-select can be added in backend.</div>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3 style="margin:0 0 12px;">Important Dates</h3>
+
+          <div class="grid-2">
+            <div class="field">
+              <label>Posted Date *</label>
+              <input class="input" type="date" value="2026-10-01" required />
+            </div>
+            <div class="field">
+              <label>Application Deadline *</label>
+              <input class="input" type="date" value="2026-11-20" required />
+              <div class="help">Validation demo: Application deadline cannot be before posted date.</div>
+            </div>
+          </div>
+
+          <div class="btn-row" style="margin-top:16px;">
+            <button class="btn btn-primary" type="button">Save Job</button>
+            <button class="btn btn-outline" type="button">Update Job</button>
+            <a class="btn btn-outline" href="jobs.html">Cancel</a>
+          </div>
+
+          <div class="error">
+            Example validation messages (prototype demo):
+            <ul style="margin:8px 0 0 18px; padding:0;">
+              <li>Minimum package cannot exceed maximum package.</li>
+              <li>Number of openings must be greater than zero.</li>
+            </ul>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

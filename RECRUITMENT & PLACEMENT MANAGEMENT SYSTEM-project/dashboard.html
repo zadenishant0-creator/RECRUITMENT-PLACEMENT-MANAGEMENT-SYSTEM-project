@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Recruitment & Placement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Kiran Academy Logo" onerror="this.style.display='none'">
+      <div class="title">
+        <b>KiranAcademy</b>
+        <span>Recruitment & Placement Management System</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="enquiry">Enquiry: <b>8888809416</b></div>
+      <div class="rolepill">Logged in: <b>Recruiter</b></div>
+      <a class="logout" href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="side-title">Navigation</div>
+      <nav class="nav">
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="companies.html">Companies</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="placement-process.html">Placement Process</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+      <div class="side-section">
+        <div class="side-title">Quick Actions</div>
+        <div class="btn-row">
+          <a class="btn btn-sm btn-primary" href="candidates.html">View Candidates</a>
+          <a class="btn btn-sm btn-primary" href="jobs.html">View Open Jobs</a>
+        </div>
+        <div class="btn-row" style="margin-top:10px;">
+          <a class="btn btn-sm btn-primary" href="interviews.html">View Interviews</a>
+          <a class="btn btn-sm btn-outline" href="reports.html">View Reports</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Dashboard</h1>
+          <div class="breadcrumb">Home &gt; Dashboard</div>
+        </div>
+      </div>
+
+      <section class="cards">
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">2450</div>
+          <div class="label">Total Candidates</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">910</div>
+          <div class="label">Active Candidates</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">6</div>
+          <div class="label">Companies</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">28</div>
+          <div class="label">Open Jobs</div>
+        </div>
+
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">1200</div>
+          <div class="label">Applications</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">14</div>
+          <div class="label">Interviews Today</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">210</div>
+          <div class="label">Selected</div>
+        </div>
+        <div class="card" style="grid-column: span 3;">
+          <div class="kpi">685</div>
+          <div class="label">Placed</div>
+        </div>
+      </section>
+
+      <div class="grid-2">
+        <section class="panel">
+          <h3 style="margin:0 0 10px;">Recruitment Funnel</h3>
+          <div class="help">Applications → Shortlisted → Interviewed → Selected → Joined → Placed</div>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="badge badge-blue">Applications: <b>1,200</b></span>
+            <span class="badge badge-yellow">Shortlisted: <b>760</b></span>
+            <span class="badge badge-blue">Interviewed: <b>480</b></span>
+            <span class="badge badge-green">Selected: <b>210</b></span>
+            <span class="badge badge-green">Joined: <b>175</b></span>
+            <span class="badge badge-blue">Placed: <b>685</b></span>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3 style="margin:0 0 10px;">Upcoming Interviews</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Interview ID</th>
+                  <th>Candidate</th>
+                  <th>Company</th>
+                  <th>Round</th>
+                  <th>Date/Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>INT1008</td><td>Rahul Patil</td><td>Infosys</td><td>Technical</td>
+                  <td>03-Nov-2026 11:30 AM</td><td><span class="badge badge-blue">SCHEDULED</span></td>
+                </tr>
+                <tr>
+                  <td>INT1010</td><td>Meera Singh</td><td>TCS</td><td>HR</td>
+                  <td>04-Nov-2026 02:00 PM</td><td><span class="badge badge-blue">SCHEDULED</span></td>
+                </tr>
+                <tr>
+                  <td>INT1012</td><td>Arjun Verma</td><td>Wipro</td><td>Aptitude</td>
+                  <td>05-Nov-2026 10:15 AM</td><td><span class="badge badge-gray">RESCHEDULED</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btn-row" style="margin-top:12px;">
+            <a class="btn btn-outline" href="interviews.html">View All Interviews</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="grid-2" style="margin-top:16px;">
+        <section class="panel">
+          <h3 style="margin:0 0 10px;">Recent Job Openings</h3>
+          <div class="table-wrap">
+            <table style="min-width:760px;">
+              <thead>
+                <tr><th>Job Code</th><th>Company</th><th>Title</th><th>Openings</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>JOB-2026-001</td><td>Infosys</td><td>Associate Java Developer</td><td>15</td><td><span class="badge badge-green">OPEN</span></td></tr>
+                <tr><td>JOB-2026-014</td><td>TCS</td><td>Backend Engineer (Java)</td><td>10</td><td><span class="badge badge-green">OPEN</span></td></tr>
+                <tr><td>JOB-2026-019</td><td>Wipro</td><td>Cloud Support Engineer</td><td>6</td><td><span class="badge badge-yellow">DRAFT</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btn-row" style="margin-top:12px;">
+            <a class="btn btn-outline" href="jobs.html">View Jobs</a>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3 style="margin:0 0 10px;">Recent Placements</h3>
+          <div class="table-wrap">
+            <table style="min-width:760px;">
+              <thead>
+                <tr><th>Candidate</th><th>Job</th><th>Offer</th><th>Joining</th><th>Placement Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Priya Kulkarni</td><td>JOB-2026-001</td><td>ACCEPTED</td><td>01-Sep-2026</td><td><span class="badge badge-green">PLACED</span></td></tr>
+                <tr><td>Rohit Sharma</td><td>JOB-2026-014</td><td>ACCEPTED</td><td>18-Oct-2026</td><td><span class="badge badge-green">PLACED</span></td></tr>
+                <tr><td>Neha Rao</td><td>JOB-2026-019</td><td>OFFERED</td><td>—</td><td><span class="badge badge-yellow">ON_HOLD</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btn-row" style="margin-top:12px;">
+            <a class="btn btn-outline" href="placement-process.html">Placement Process</a>
+            <a class="btn btn-primary" href="reports.html">View Reports</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
